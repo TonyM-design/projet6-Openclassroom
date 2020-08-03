@@ -1,0 +1,348 @@
+body{
+  margin: 0px;
+}
+h1 {
+  padding: 5px;
+  text-align: center;
+  background-color: hotpink;
+  position: relative;
+}
+
+p {
+  width: 500px;
+  padding: 1%;
+  margin: auto;
+  background-color: blue;
+  position: relative;
+}
+
+.plateau{
+  background-color: green;
+  
+}
+
+
+.health-box {
+  background-color: #ccc;
+  height: 100px; 
+  border: solid 1px #aaa;
+}
+
+.espace-sante {
+  background-color: #ccc;
+  height: 100px; 
+  border: solid 1px #aaa;
+}
+
+.health-bar {
+  background-color: #007f00;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  margin-top: -97px;
+  
+}
+
+.barre-vie-sante {
+  background-color: #007f00;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+ 
+  
+}
+
+.health-bar-red {
+  width: 100%;
+  height: 100%;
+  background-color: #cc0000;
+  position: relative;
+
+}
+
+.barre-vie-degat {
+  width: 100%;
+  height: 100%;
+  background-color: #cc0000;
+  position: relative;
+
+}
+
+.health-bar-text {
+  position: relative;
+}
+
+.barre-vie-txt {
+  position: relative;
+}
+
+.total {
+  font-size: 16px;
+  margin: 5px;
+}
+
+
+.rangeetablejeu{
+  box-sizing: border-box;
+
+  background-color: aqua;
+
+}
+
+
+
+  
+  .celluleVide{
+    box-sizing: border-box;
+    
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image:url(asset/img/texture_dalle.svg);
+  
+   
+  }
+  
+  .cellulegrise{
+    box-sizing: border-box;
+
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: grey;
+    background-image:url(asset/img/texture_sol.svg);
+  
+    
+  }
+
+
+  
+  
+  .joueur0{
+    box-sizing: border-box;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: yellow;
+    z-index: 3;
+  
+  }
+  
+  .joueur1{
+  box-sizing: border-box;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  background: purple;
+  z-index: 3;
+  
+  }
+
+
+  .Dague{
+    box-sizing: border-box;
+    border: 1px black solid;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    float: left;
+    z-index: 0;
+    background-color: black ;
+    background-size: 100px;
+  }
+
+.AnneauEpique{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_anneau_epique.png);
+  background-size: 100px;
+
+}
+
+.AnneauSimple{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_anneau_normal.png);
+  background-size: 100px;
+}
+
+.EpeeEpique{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_epee_epique.png);
+  background-size: 100px;
+
+}
+
+.EpeeSimple{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_epee_normal.png);
+  background-size: 100px;
+
+}
+
+.BouclierEpique{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_bouclier_epique.png);
+  background-size: 100px;
+
+}
+
+.BouclierSimple{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_bouclier_normal.png);
+  background-size: 100px;
+
+}
+
+.CasqueEpique{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_casque_epique.png);
+  background-size: 100px;
+
+}
+
+.CasqueSimple{
+  box-sizing: border-box;
+  border: 1px black solid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 0;
+  background-image:url(asset/img/icone_casque_normal.png);
+  background-size: 100px;
+
+}
+
+
+
+/* ANIM JOUEUR ACTIF */
+
+
+.actif{
+border: solid 10px black;
+
+}
+
+.visuelVibrationOccupee {
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-name: vibrationOccupee;
+}
+
+
+
+  @keyframes vibrationOccupee {
+    0% {
+      transform-origin: center;
+      box-shadow: 0px 0px 0px 0px rgb(158, 0, 0);
+    }
+    50% {
+      opacity: 1;
+      transform-origin: center;
+
+      box-shadow: 0px 0px 30px 5px rgb(158, 0, 0);
+    }
+    100% {
+      transform-origin: center;
+      box-shadow: 0px 0px 0px 0px rgb(158, 0, 0);
+    }
+  }
+
+
+.visuelVibration {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: vibration;
+}
+
+
+
+  @keyframes vibration {
+    0% {
+      transform-origin: center;
+      box-shadow: 0px 0px 0px 0px rgb(51, 255, 0);
+    }
+    50% {
+      opacity: 1;
+      transform-origin: center;
+
+      box-shadow: 0px 0px 30px 5px rgb(51, 255, 1);
+    }
+    100% {
+      transform-origin: center;
+      box-shadow: 0px 0px 0px 0px rgb(51, 255, 0);
+    }
+  }
